@@ -43,26 +43,5 @@ The `query_own_ip()` function retrieves the public IP address of the current mac
 query_own_ip()
 ```
 ```{r, echo = FALSE}
-res <- data.frame(
-  ip = "203.0.113.45",
-  asn = "AS0",
-  org = "",
-  isp = "",
-  country = "",
-  country_code = "",
-  city = "",
-  state = "",
-  zipcode = "",
-  latitude = 0.0142515998133369,
-  longitude = -0.008837990871860742,
-  timezone = "",
-  localtime = "2025-01-02T15:55:33",
-  is_mobile = FALSE,
-  is_vpn = FALSE,
-  is_tor = FALSE,
-  is_proxy = FALSE,
-  is_datacenter = FALSE,
-  risk_score = 0L
-)
-structure(res, class = c("tbl", "data.frame"))
+query_ips("203.0.113.45")
 ```

@@ -47,10 +47,9 @@ current machine.
 query_own_ip()
 ```
 
-    # A data frame: 1 × 19
-      ip         asn   org   isp   country country_code city  state zipcode latitude
-    * <chr>      <chr> <chr> <chr> <chr>   <chr>        <chr> <chr> <chr>      <dbl>
-    1 203.0.113… AS0   ""    ""    ""      ""           ""    ""    ""        0.0143
-    # ℹ 9 more variables: longitude <dbl>, timezone <chr>, localtime <chr>,
-    #   is_mobile <lgl>, is_vpn <lgl>, is_tor <lgl>, is_proxy <lgl>,
-    #   is_datacenter <lgl>, risk_score <int>
+                ip asn org isp country country_code city state zipcode  latitude
+    1 203.0.113.45 AS0                                                 0.0142516
+         longitude timezone           localtime is_mobile is_vpn is_tor is_proxy
+    1 -0.008837991          2025-01-02T16:06:08     FALSE  FALSE  FALSE    FALSE
+      is_datacenter risk_score
+    1         FALSE          0

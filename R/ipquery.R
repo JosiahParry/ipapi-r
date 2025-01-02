@@ -151,7 +151,7 @@ query_ips <- function(ips) {
 #' Returns information about the IP address of the host machine.
 #'
 #' @return A character string
-#' @export\
+#' @export
 #' @examples
 #' if (rlang::is_installed("curl")) {
 #'   if (curl::has_internet()) {
