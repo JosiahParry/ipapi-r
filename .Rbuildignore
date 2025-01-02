@@ -4,3 +4,7 @@
 ^src/rust/vendor$
 ^src/Makevars$
 ^src/Makevars\.win$
+^_pkgdown\.yml$
+^docs$
+^pkgdown$
+^\.github$

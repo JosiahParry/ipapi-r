@@ -1,0 +1,68 @@
+---
+format: gfm
+title: ipapi-r
+---
+
+[![R-CMD-check](https://github.com/JosiahParry/ipapi-r/actions/workflows/R-CMD-check.yaml/badge.svghttps://github.com/JosiahParry/ipapi-r/actions/workflows/R-CMD-check.yaml/badge.svghttps://github.com/JosiahParry/ipapi-r/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/JosiahParry/ipapi-r/actions/workflows/R-CMD-check.yaml)
+
+An R package to query IP addresses using the ipquery.io API.
+
+## Installation
+
+Install the package from GitHub using:
+
+```r
+remotes::install_github("josiahparry/ipapi-r")
+```
+
+## Usage
+
+First, load the package. 
+
+```{r}
+library(ipapi)
+```
+
+```{r, include = FALSE}
+library(pillar)
+```
+
+### Query a Specific IP Address
+
+The `query_ips()` function retrieves information about IP addresses, including its ISP, location, and risk data.
+
+```{r}
+query_ips(c("8.8.8.8", "1.1.1.1"))
+```
+
+### Fetch Your Own Public IP Address
+
+The `query_own_ip()` function retrieves the public IP address of the current machine.
+
+```{r, eval = FALSE}
+query_own_ip()
+```
+```{r, echo = FALSE}
+res <- data.frame(
+  ip = "203.0.113.45",
+  asn = "AS0",
+  org = "",
+  isp = "",
+  country = "",
+  country_code = "",
+  city = "",
+  state = "",
+  zipcode = "",
+  latitude = 0.0142515998133369,
+  longitude = -0.008837990871860742,
+  timezone = "",
+  localtime = "2025-01-02T15:55:33",
+  is_mobile = FALSE,
+  is_vpn = FALSE,
+  is_tor = FALSE,
+  is_proxy = FALSE,
+  is_datacenter = FALSE,
+  risk_score = 0L
+)
+structure(res, class = c("tbl", "data.frame"))
+```

@@ -17,3 +17,4 @@ Imports:
     rlang
 Suggests:
     curl
+URL: https://josiahparry.github.io/ipapi-r/

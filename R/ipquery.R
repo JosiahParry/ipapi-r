@@ -1,7 +1,7 @@
 # Utility functions
 # chunk the strings
 chunk_strings <- function(x, n) {
-  split(vec, ceiling(seq_along(x) / n))
+  split(x, ceiling(seq_along(x) / n))
 }
 
 
@@ -19,15 +19,15 @@ chunk_strings <- function(x, n) {
   resp_body <- yyjsonr::read_json_str(httr2::resp_body_string(resp))
   vctrs::vec_cbind(
     ip = resp_body$ip,
-    tibble::as_tibble(resp_body$isp),
-    tibble::as_tibble(resp_body$location),
-    tibble::as_tibble(resp_body$risk)
+    as.data.frame(resp_body$isp),
+    as.data.frame(resp_body$location),
+    as.data.frame(resp_body$risk)
   )
 }
 
 
 ip_ptype <- function() {
-  data.frame(
+  res <- data.frame(
     ip = character(0),
     isp = character(0),
     asn = character(0),
@@ -48,6 +48,7 @@ ip_ptype <- function() {
     is_datacenter = logical(0),
     risk_score = integer(0)
   )
+  structure(res, class = c("tbl", "data.frame"))
 }
 
 #' Get information about IP Addresses
@@ -98,9 +99,11 @@ query_ips <- function(ips) {
     rlang::abort("`ips` must not have `NA` values")
   }
 
-  n <- length(ips) == 0
+  n <- length(ips)
+
   # return prototype if length is 0
   if (n == 0) {
+    rlang::warn("No IP addresses provided")
     return(ip_ptype())
   }
 
@@ -140,7 +143,7 @@ query_ips <- function(ips) {
   }
 
   # return results
-  res
+  structure(res, class = c("tbl", "data.frame"))
 }
 
 #' Query host IP Address
