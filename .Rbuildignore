@@ -1,3 +1,5 @@
+^README.qmd$
+^README.md$
 ^ipquery\.Rproj$
 ^\.Rproj\.user$
 ^src/\.cargo$
@@ -8,3 +10,5 @@
 ^docs$
 ^pkgdown$
 ^\.github$
+^LICENSE\.md$
+^CRAN-SUBMISSION$
