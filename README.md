@@ -47,9 +47,4 @@ current machine.
 query_own_ip()
 ```
 
-                ip asn org isp country country_code city state zipcode  latitude
-    1 203.0.113.45 AS0                                                 0.0142516
-         longitude timezone           localtime is_mobile is_vpn is_tor is_proxy
-    1 -0.008837991          2025-01-02T16:06:08     FALSE  FALSE  FALSE    FALSE
-      is_datacenter risk_score
-    1         FALSE          0
+    [1] "203.0.113.45"

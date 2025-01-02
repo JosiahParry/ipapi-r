@@ -43,5 +43,5 @@ The `query_own_ip()` function retrieves the public IP address of the current mac
 query_own_ip()
 ```
 ```{r, echo = FALSE}
-query_ips("203.0.113.45")
+"203.0.113.45"
 ```
