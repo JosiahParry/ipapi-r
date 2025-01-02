@@ -1,15 +1,16 @@
 # ipapi-r
 
-[![R-CMD-check](https://github.com/JosiahParry/ipapi-r/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/JosiahParry/ipapi-r/actions/workflows/R-CMD-check.yaml)
+[![R-CMD-check](https://github.com/ipqwery/ipapi-r/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/ipqwery/ipapi-r/actions/workflows/R-CMD-check.yaml)
 
-An R package to query IP addresses using the ipquery.io API.
+An R package to query IP addresses using the
+[ipquery.io](https://ipquery.io) API.
 
 ## Installation
 
 Install the package from GitHub using:
 
 ``` r
-remotes::install_github("josiahparry/ipapi-r")
+remotes::install_github("ipqwery/ipapi-r")
 ```
 
 ## Usage

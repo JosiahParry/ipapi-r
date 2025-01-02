@@ -9,7 +9,7 @@ Authors@R: c(
 Description: 'IpQuery' is a flexible api for vpn detection, geolocation,
     and threat intelligence.
 License: MIT + file LICENSE
-URL: https://josiahparry.github.io/ipapi-r/
+URL: https://ipqwery.github.io/ipapi-r/
 Depends: 
     R (>= 4.1.0)
 Imports: 
