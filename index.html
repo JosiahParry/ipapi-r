@@ -83,13 +83,12 @@
 <p>The <code><a href="reference/query_own_ip.html">query_own_ip()</a></code> function retrieves the public IP address of the current machine.</p>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="reference/query_own_ip.html">query_own_ip</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
-<div class="sourceCode" id="cb6"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a><span class="co"># A data frame: 1 × 19</span></span>
-<span id="cb6-2"><a href="#cb6-2" tabindex="-1"></a>  ip         asn   org   isp   country country_code city  state zipcode latitude</span>
-<span id="cb6-3"><a href="#cb6-3" tabindex="-1"></a><span class="sc">*</span> <span class="er">&lt;</span>chr<span class="sc">&gt;</span>      <span class="er">&lt;</span>chr<span class="sc">&gt;</span> <span class="er">&lt;</span>chr<span class="sc">&gt;</span> <span class="er">&lt;</span>chr<span class="sc">&gt;</span> <span class="er">&lt;</span>chr<span class="sc">&gt;</span>   <span class="er">&lt;</span>chr<span class="sc">&gt;</span>        <span class="er">&lt;</span>chr<span class="sc">&gt;</span> <span class="er">&lt;</span>chr<span class="sc">&gt;</span> <span class="er">&lt;</span>chr<span class="sc">&gt;</span>      <span class="er">&lt;</span>dbl<span class="sc">&gt;</span></span>
-<span id="cb6-4"><a href="#cb6-4" tabindex="-1"></a><span class="dv">1</span> <span class="dv">203</span>.<span class="fl">0.113</span>… AS0   <span class="st">""</span>    <span class="st">""</span>    <span class="st">""</span>      <span class="st">""</span>           <span class="st">""</span>    <span class="st">""</span>    <span class="st">""</span>        <span class="fl">0.0143</span></span>
-<span id="cb6-5"><a href="#cb6-5" tabindex="-1"></a><span class="co"># ℹ 9 more variables: longitude &lt;dbl&gt;, timezone &lt;chr&gt;, localtime &lt;chr&gt;,</span></span>
-<span id="cb6-6"><a href="#cb6-6" tabindex="-1"></a><span class="co">#   is_mobile &lt;lgl&gt;, is_vpn &lt;lgl&gt;, is_tor &lt;lgl&gt;, is_proxy &lt;lgl&gt;,</span></span>
-<span id="cb6-7"><a href="#cb6-7" tabindex="-1"></a><span class="co">#   is_datacenter &lt;lgl&gt;, risk_score &lt;int&gt;</span></span></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a>            ip asn org isp country country_code city state zipcode  latitude</span>
+<span id="cb6-2"><a href="#cb6-2" tabindex="-1"></a><span class="dv">1</span> <span class="dv">203</span>.<span class="dv">0</span>.<span class="fl">113.45</span> AS0                                                 <span class="fl">0.0142516</span></span>
+<span id="cb6-3"><a href="#cb6-3" tabindex="-1"></a>     longitude timezone           localtime is_mobile is_vpn is_tor is_proxy</span>
+<span id="cb6-4"><a href="#cb6-4" tabindex="-1"></a><span class="dv">1</span> <span class="sc">-</span><span class="fl">0.008837991</span>          <span class="dv">2025-01-02</span>T16<span class="sc">:</span><span class="dv">06</span><span class="sc">:</span><span class="dv">08</span>     <span class="cn">FALSE</span>  <span class="cn">FALSE</span>  <span class="cn">FALSE</span>    <span class="cn">FALSE</span></span>
+<span id="cb6-5"><a href="#cb6-5" tabindex="-1"></a>  is_datacenter risk_score</span>
+<span id="cb6-6"><a href="#cb6-6" tabindex="-1"></a><span class="dv">1</span>         <span class="cn">FALSE</span>          <span class="dv">0</span></span></code></pre></div>
 </div>
 </div>
 </div>
